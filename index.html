@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d6f5170aea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- <div id="heading">Let's Play</div> -->
+    <h1 id="heading" class="name">Rock-Paper-Scissors</h1>
+
+    <main class="main">
+        <div class="scoreboard">
+          <h2 class="score-info" id="scoreInfo">Choose your weapon</h2>
+          <h3 class="score-message" id="scoreMessage">
+            First to score 5 points wins the game
+          </h3>
+          <div class="scores-container">
+            <div class="score-box">
+              <div class="sign" id="playerSign">❔</div>
+              <p class="score" id="playerScore">Player: 0</p>
+            </div>
+            <div class="score-box">
+              <div class="sign" id="computerSign">❔</div>
+              <p class="score" id="computerScore">Computer: 0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-square" id="rockBtn">
+              <div class="sign">✊</div>
+            </button>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn btn-square" id="paperBtn">
+              <div class="sign">✋</div>
+            </button> &nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn btn-square" id="scissorsBtn">
+              <div class="sign">✌</div>
+            </button>
+          </div>
+     </main>
+
+
+     <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          Aarushi 
+        </p>
+        <a href="https://github.com/Aarushi2021" target="_blank">
+          <i class="fab fa-github"></i
+        ></a>
+      </footer>
+
+      <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg"></p>
+         <button class="btn btn-restart" id="restartBtn">Play again</button>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+<script src="script.js"></script>
+</body>
+</html>
